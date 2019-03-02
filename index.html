@@ -13,9 +13,9 @@
 <body>
 
     <!-- start header -->
-    <section class="main_header">
+    <section class="main_header" id="HOME">
 
-        <div class="header_nav">
+        <div class="header_nav scroll-nav">
             <div class="container">
                 <div class="img-icon">
                     <img src="./image/Analytics-512.png" width="50px" height="50px" alt="logo">
@@ -25,16 +25,17 @@
                     <label for="nav"></label>
                 
                     <ul class="ul-item">
-                        <li class="list-item"><a href="#">HOME</a></li>
-                        <li class="list-item"><a href="#">SERVISES</a></li>
-                        <li class="list-item"><a href="#">WORK</a></li>
-                        <li class="list-item"><a href="#">ABOUT US</a></li>
-                        <li class="list-item"><a href="#">SKILLS</a></li>
-                        <li class="list-item"><a href="#">CONTACT</a></li>
+                        <li class="list-item"><a href="#" data-value="HOME">HOME</a></li>
+                        <li class="list-item"><a href="#" data-value="SERVISES">SERVISES</a></li>
+                        <li class="list-item"><a href="#" data-value="WORK">WORK</a></li>
+                        <li class="list-item"><a href="#" data-value="SKILLS">SKILLS</a></li>
+                        <li class="list-item"><a href="#" data-value="ABOUT">ABOUT US</a></li>
+                        <li class="list-item"><a href="#" data-value="CONTACT">CONTACT</a></li>
                     </ul>
         
             </div>
         </div>
+        <div class="clear"></div>
 
         <div class="header_body">
             <div class="header_contact">
@@ -51,11 +52,14 @@
     </section>
     <!-- End Header -->
 
+    
 
-
+<!-- ^ -->
+<div id="scrolltop">^</div>
+<!-- ^ -->
     <!-- Start Contact -->
-    <div class="container">
-        <section class="Main_Contact">
+    <div class="container" >
+        <section class="Main_Contact" id="SERVISES">
 
             <div class="Item1">
                 <div class="Item_first">
@@ -115,7 +119,7 @@
 
 
     <!-- Start Work -->
-    <div class="portfolio">
+    <div class="portfolio" id="WORK">
         <h2 class="portfolio-title"><span>W</span>ORK</h2>
         <ul class="portfolio-list">
             <li class="portfolio-item active">All</li>
@@ -208,7 +212,7 @@
 
     <!-- Start Skils -->
     <div class="container">
-        <div class="skils_container">
+        <div class="skils_container" id="SKILLS">
 
             <div class="skil">
                 <div class="profile">
@@ -283,7 +287,7 @@
 
 
     <!--Start creative -->
-    <div class="creative">
+    <div class="creative" id="ABOUT">
         <div class="container">
             <div class="creative-info">
                 <h2 class="info-title"><span>ABOUT</span> US</h2>
@@ -300,7 +304,7 @@
 
 
     <!-- Start Social -->
-    <div class="social-media">
+    <div class="social-media" id="CONTACT">
             
             <div class="social face">
                 <i class="icon fa fa-facebook fa-lg"></i>
@@ -363,6 +367,9 @@
     </div>
 
 <!-- End bottom -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
